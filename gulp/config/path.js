@@ -5,10 +5,16 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 const buildFolder = `./public`;
 const srcFolder = `./src`;
 
-const path = {
-  build: {},
-  src: {},
-  watch: {},
+export const path = {
+  build: {
+    files: `${buildFolder}/files/`,
+  },
+  src: {
+    files: `${srcFolder}/files/**/*.*`,
+  },
+  watch: {
+    files: `${srcFolder}/files/**/*.*`,
+  },
   clean: buildFolder,
   buildFolder: buildFolder,
   srcFolder: srcFolder,
