@@ -1,7 +1,11 @@
+@import "fonts";
+
 body{
-  background-color: black;
+  font-family: Gilroy;
+  font-size: 50px;
+  background-color: rgb(209, 187, 187);
   span{
     color: red;
   }
-  background: url("@img/Trump_Edition_v1.jpg") 0 0 no-repeat;
+  // background: url("@img/Trump_Edition_v1.jpg") 0 0 no-repeat;
 }
