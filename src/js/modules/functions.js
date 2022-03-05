@@ -1,5 +1,5 @@
 export function testWebP(callback) {
-  var webP = new Image();
+  let webP = new Image();
   webP.onload = webP.onerror = function () {
     callback(webP.height == 2);
   };
@@ -8,9 +8,6 @@ export function testWebP(callback) {
 }
 
 testWebP(function (support) {
-  if (support == true) {
-    document.querySelector("body").classList.add("webp");
-  } else {
-    document.querySelector("body").classList.add("no-webp");
-  }
+  let className = support === true ? "webp" : "no-webp";
+  document.documentElement.classList.add(className);
 });
